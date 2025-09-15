@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+body {
+    background: rgb(253, 253, 255);
+    font-family: Sarabun;
+    
+    margin:0;
+    padding:0;
+    
+    display: flex;
+    flex-direction: column;
+}
+a {
+    text-decoration: none;
+    color: #ddd;
+}
+/* HEADER */
+header {
+    background: linear-gradient(180deg, rgba(22,22,33,0.75), rgba(33,33,44,0.50)); backdrop-filter: blur(8px);
+    justify-content: center; text-align: center;
+    padding: 2vh 2vw;
+    position: sticky; top:0; left:0; z-index: 10;
+}
+nav {flex-direction: row;}
+
+
+#title {
+    color: #FFF;
+    font-size: 6vh; font-weight: bolder;
+}
+/* MAIN */
+main {    
+    padding: 10vh 10vw;
+    flex:1; z-index: 5;
+    min-height: 60vh;
+}
+article {
+    border-radius: 20px;
+    padding: 2%; margin: 6px;
+}
+#recommend {
+    color:#fff;
+    background: linear-gradient(90deg, rgba(55,55,77,0.75), rgba(22,22,33,0.75)); 
+    border-radius: 20px;
+}
+#categories{
+    flex-direction: row; display:flex;
+}
+#category{
+    color:#fff; 
+    background: rgba(22,22,22,0.75); 
+    width:50%;
+}
+/* FOOTER */
+footer {
+    color: #fff;
+    background: linear-gradient(0deg, rgba(22,22,33,0.75), rgba(33,33,44,0.55));
+    padding: 2vh 2vw;
+    position: inherit; top:-2vh; left:0; z-index: 10;
+}
+
+@media (max-width: 480px) {
+    article{padding:1% 6%;}
+    footer {padding: 2vh 4vw;}
+    #categories{flex-direction: column; display: flex;}
+    #category{width: auto;padding:6%;}
+}
+
