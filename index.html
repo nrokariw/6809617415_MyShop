@@ -1,47 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="mystyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Shop</title>
-    <link rel="stylesheet" href="mystyle.css">
 </head>
+
 <body>
-    <header>
-        <div id="title">myShop</div>
-        <nav>
-           <a href="index.html">home</a>
-           <a href="my1stcategory.html">shirt</a>
-           <a href="my2ndcategory.html">shoe</a>
-        </nav>
-    </header>
-
     <main>
-        <div class="container">
-            <section id="intro">
-                <article id="recommend">
-                    <h1>Welcome to myShop</h1>
-                    <p>Our shop carefully selects shirts and shoes that are high quality and affordable, giving you both style and value in one place.</p>
-                    <p>Whether it’s comfortable fashion shirts or stylish and durable shoes, we have everything you need, plus great promotions all year round!</p>
-                </article>
-            </section>
-            <section id="categories">
-                <article id="category">
-                    <h2>👕 Shirt</h2>
-                    <p>We collect good quality and good price from worldwide.</p>
-                    <a href="my1stcategory.html" class="btn">here</a>
-                </article>
-                <article id="category">
-                    <h2>🩴 Shoe</h2>
-                    <p>You would to try our taste here, it would make you feel good when buy it.</p>
-                    <a href="my2ndcategory.html" class="btn">here</a>
-                </article>
-            </section>
-        </div>
-    </main>
+        <header>
+            <div class="glass">
+                <input type="checkbox" id="nav-toggle" hidden>
+                <label for="nav-toggle" id="nav-button">
+                    <img src="./resources/Burger Menu Icon.svg" alt="Menu" style="width:auto; height:3vh;">
+                </label>
+                <nav>
+                    <div class="glass">
+                        <a href="index.html">home</a>
+                        <a href="products.html">category1</a>
+                        <a href="about.html">category2</a>
+                        <a href=#info>info</a>
+                    </div>
+                </nav>
 
-    <footer>
-        <p>&copy; 2025 myShop. All rights reserved.</p>
-    </footer>
+                <h1 id="title">myShop</h1>
+            </div>
+        </header>
+
+        <content>
+            <div class="container">
+                <article>
+                    <div class="glass" style="border-radius: 2rem;">
+                        <video src=""></video>
+                    </div>
+                </article>
+                <article>
+                    <div class="glass" style="border-radius: 2rem;">
+                        <h3>Welcome!</h3>
+                        <p>Welcome to myShop generation 2! Our store is dedicated to bringing you the best selection of
+                            clothing and footwear at prices that fit your lifestyle. Whether you are looking for casual
+                            wear, stylish outfits, or durable shoes that carry you comfortably throughout the day,
+                            myShop offers carefully curated collections designed for every occasion. We focus on quality
+                            fabrics, modern trends, and reliable footwear to make sure you always look good and feel
+                            confident. From everyday essentials to standout pieces, our goal is to be your trusted
+                            online source for affordable fashion that doesn’t compromise on style or comfort.</p>
+                    </div>
+                </article>
+            </div>
+        </content>
+        <footer>
+            <div class="glass">
+                <p id="info">&copy;2025 Wirakorn Thanabat, All Right Reserve.</p>
+            </div>
+        </footer>
+    </main>
 </body>
 </html>
