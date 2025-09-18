@@ -191,7 +191,13 @@ article h1 {
   color: rgba(0, 0, 0, 0.5);
   font-size: 16px;
 }
-
+.recommend-video-div {
+  align-items: center; justify-content: center;
+}
+#recommend-video {
+  width: 75vw;
+  border-radius: 2rem;
+}
 
 @media (max-width: 767px) {
   article h1 {
@@ -235,6 +241,9 @@ article h1 {
     height: auto;
     position: relative;
     z-index: 10;
+  }
+  #recommend-video {
+    max-width: 480px;
   }
 }
 /* FOOTER */
